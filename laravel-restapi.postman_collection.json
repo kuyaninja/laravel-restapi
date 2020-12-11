@@ -1,0 +1,214 @@
+{
+	"info": {
+		"_postman_id": "444f1cec-326c-417c-ba73-612c71c2a7f3",
+		"name": "laravel-restapi",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost/api/register",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiZTViYjMzYTY4MzQ3MWZlMWY3MjNiYzdjZDlhOTE4ZDZiYzI3MDhkNzdhZDY2OWY0OWM3MDg2YTNkMTRiMjA2YjY1NmI3YjcyMDVmYzk3MTciLCJpYXQiOjE2MDc3MjY5MzEsIm5iZiI6MTYwNzcyNjkzMSwiZXhwIjoxNjIzNDUxNzMwLCJzdWIiOiIzIiwic2NvcGVzIjpbXX0.UydOWHwHEDc_KD9qvMpoCr-d-GInGph-yQ_ApiI7IFj_0QbGZiEgPh6TOE0e9IzxrrsLEIjI-zSg6GqRFr1a5HraRo5ZFcarHhdSsKgPtgFQdACk2qU_q15hGRFhOHwuL5MzQf28ucwni5CNV9ZRL3_r6jfGEREcyVyKz_Sey6SOV3bCFl_yX4zGkdWr1_5XIohQODd1qsXJjS_JHaEkZsots7MeZaSJROWZtHV4t2wmAaGsYL2ZkudI5KZ0wcYTAmBrcYmNb5QKLGw4RmGO4HMS30xjXMI7SNFvrICcgGWMMJzLLAB322Z2MfrRyy9_SPKS8pUDb-8Bg4_tEY6IHkfpHIDK0qMwVuq3118VNT1ebuiSsz9xRwIMWvbEgzooxXX4iy52YgFwIb9I7DMrBUENMYYsemnzfBeYlbgWQMMCNyyp7KhcwmUD9Fwhk1ttdhzltOG_L6ggScfXjnV4RDDHNCMQAMglqD8auoPm3LCLcFOm7DLzTNxH5Nm47wpkg-xn3TazqNBqaynO3ILwSJqKZ_yESdmxFmFBuEgxPeYPmH2pzqlAeIgAUXuyLg05ynNa8Nk3TfkCx4_KbZN-oYtpc2b39x0IQE4_v-IAtRfuFP0VjhaPDd_J_34PBujVI_v7Ddi7NvkTVppkpcJoXa_lla8VTgqQyj4qCQdEcg8",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept-Encoding",
+						"value": "application/json",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "email",
+							"value": "hallo@kuya.ninja",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "okeSip5",
+							"type": "text"
+						},
+						{
+							"key": "name",
+							"value": "kuya",
+							"type": "text"
+						},
+						{
+							"key": "password_confirmation",
+							"value": "okeSip5",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/api/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"api",
+						"register"
+					]
+				},
+				"description": "Create User"
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1/api/login",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiYzRkNDlhZjcwZjA4NjE0ZGQ2NDRmZjAxY2FhY2FiZTViNjM3ZDdmZmYwYTI2NTZkODA0MDU4MDRjYmFiNzRhNDg1MTk5MzNkNmQzNDZjNWYiLCJpYXQiOjE2MDc3MjU4NTUsIm5iZiI6MTYwNzcyNTg1NSwiZXhwIjoxNjIzNDUwNjUzLCJzdWIiOiIyIiwic2NvcGVzIjpbXX0.GiRZgkGq9luTUFBaleB6bBV4dZ2rb4roCfXBSzUfRlg1fx2jzx14eoMfeui46LyeqXybV-ZHBXNT5Jw9MG8k26OKliCDCjxwfw9v_VvOzb9GUMOXHPlUl7qzgk4JOlOs-PObbbGsZ8UP-P1AfJpNlIltPUVhwXCPn233vyHHlOURINpeLORHOYRbvJJr3tKX0_MENIGn041AqlyMFG_1LXFACuZfQSlot2vOr5m_7wVaWevt9qV92pLGOzgZ62bBWZuvOxvMxNli2nZGdOa3IyjZXrLQT9ddImbBTkEmiBd57t7Pwpc2S_JwReHrGhlBpOpbmRpPqcDe2sEZBJcDqOVZSCjxPcynTWnpQSqgOJhN6K_w0VWMxuUwEPbsDm2169dkKtoca5c4ddIu3XU0uAC-FS2OJQ4iaKpQB7griSGyFl4V1b6Q72pChlkdaR3luwsukMgdpa6AXjTSj9YwsCNcAnqoZuOlbF4CMUMDmUBXsVw8oreIFzsIrYJrefjpT8H6AJ-JHwngiry3VnwQ6gTlzQuh6-lyx8tGv1qx4Sy2C093DCqA2p606uTBDtAs8gb7RKyFma-eJucFbDS-Fisl8m1SyInsfUYYVjPta8MiftORmO-3s0TH7zV5kNwF7MWsVarbVEVbTHMm_74qlZa-4BXfXgcmegZyZXJDEf8",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "email",
+							"value": "hallo@kuya.ninja",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "okeSip5",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1/api/login",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"path": [
+						"api",
+						"login"
+					]
+				},
+				"description": "Login to Get Token"
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1/api/ceo",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiZTk4NzQ3YmVjZWM0MzNhNWY2ODgwN2U1MDQ4ZDkwN2FlNmFkOGEwZTcxNjUyNjcyYmU2ZjMzYTNjYWYxMGY0NzllMTc3MjBiZGEyNDNiYWYiLCJpYXQiOjE2MDc3MjY5ODUsIm5iZiI6MTYwNzcyNjk4NSwiZXhwIjoxNjIzNDUxNzgzLCJzdWIiOiIzIiwic2NvcGVzIjpbXX0.marTdKIJXcSDfrvGpRVbjimXtrnA9xh2_-Kq3fBZxs-iyWmu9patxEYHDY2DH4ftvqZvp0UN_oB9hjQM2mT6j0B9sMBjCwfIvZAXBdQ3uzuI-uUqwPer6ZyEbL7-IzrFkVu1zwVBysMUJ1sqZOSqIGKdXgGGNzp-W434J3e3Qjc8ACcm4q2WmIVJO1w1pXu37kJ3YhRiITcWqEsu4uyJz3cZyPiedoNcSvzDQAkWolhNCYM3-lcWPVxVpMOhcUX7SvHTb4K1gC2xmAJRmwpIf_qqojdI2oOF0imL0KPcrlymn1m4ggsE7kYk1POHRmA-FJBV-5z4u8NAqvR22D5ssJMtAaaE1-aAC1Qi80erMxUI0HnROMorg5HXk2WpBK3bWAUPh6-nnHm850Ar9mhM0Enwu3mosOk4orn6cjzozsLtqoiMy9fgZ2f49O_aVqRynytLNN89g8DWKBYalVvSnqoC8wzcaOzWEEUmwdy0vXIuQJ5MysG8oLZCAlKcDzqxBk7awub7ZFncMpeoKBsqbFguGdnKyz-RRhgZQYNP27f7rM-SZurvp8wK7jGlyu2pTUxGyV7IPhBc6iW9vuDttuH5py-oO1uGFkPNZuGpdn6ht3v__dZbgMxi8XIYRhnwwIL1nS6N625EDbUvz06LJ1AEs2gj5indv1wPAREHd8I",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1/api/ceo",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"path": [
+						"api",
+						"ceo"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1/api/ceo",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiYzRkNDlhZjcwZjA4NjE0ZGQ2NDRmZjAxY2FhY2FiZTViNjM3ZDdmZmYwYTI2NTZkODA0MDU4MDRjYmFiNzRhNDg1MTk5MzNkNmQzNDZjNWYiLCJpYXQiOjE2MDc3MjU4NTUsIm5iZiI6MTYwNzcyNTg1NSwiZXhwIjoxNjIzNDUwNjUzLCJzdWIiOiIyIiwic2NvcGVzIjpbXX0.GiRZgkGq9luTUFBaleB6bBV4dZ2rb4roCfXBSzUfRlg1fx2jzx14eoMfeui46LyeqXybV-ZHBXNT5Jw9MG8k26OKliCDCjxwfw9v_VvOzb9GUMOXHPlUl7qzgk4JOlOs-PObbbGsZ8UP-P1AfJpNlIltPUVhwXCPn233vyHHlOURINpeLORHOYRbvJJr3tKX0_MENIGn041AqlyMFG_1LXFACuZfQSlot2vOr5m_7wVaWevt9qV92pLGOzgZ62bBWZuvOxvMxNli2nZGdOa3IyjZXrLQT9ddImbBTkEmiBd57t7Pwpc2S_JwReHrGhlBpOpbmRpPqcDe2sEZBJcDqOVZSCjxPcynTWnpQSqgOJhN6K_w0VWMxuUwEPbsDm2169dkKtoca5c4ddIu3XU0uAC-FS2OJQ4iaKpQB7griSGyFl4V1b6Q72pChlkdaR3luwsukMgdpa6AXjTSj9YwsCNcAnqoZuOlbF4CMUMDmUBXsVw8oreIFzsIrYJrefjpT8H6AJ-JHwngiry3VnwQ6gTlzQuh6-lyx8tGv1qx4Sy2C093DCqA2p606uTBDtAs8gb7RKyFma-eJucFbDS-Fisl8m1SyInsfUYYVjPta8MiftORmO-3s0TH7zV5kNwF7MWsVarbVEVbTHMm_74qlZa-4BXfXgcmegZyZXJDEf8",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "Garry",
+							"type": "text"
+						},
+						{
+							"key": "company_name",
+							"value": "EDA",
+							"type": "text"
+						},
+						{
+							"key": "year",
+							"value": "2020",
+							"type": "text"
+						},
+						{
+							"key": "company_headquarters",
+							"value": "Mampang Prapatan",
+							"type": "text"
+						},
+						{
+							"key": "what_company_does",
+							"value": "Logistik kecil kecilan",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1/api/ceo",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"path": [
+						"api",
+						"ceo"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
